@@ -5,24 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nesflix</title>
     <link rel="stylesheet" href="./styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Nesflix</h1>
-        <div>
+    <header class="header">
+        <h1 class="header-title">Nesflix</h1>
+        <div class="menu">
             <ul>
-                <li>Inicio</li>
-                <li>Trending</li>
-                <li>Categorias</li>
-                <li>Popular</li>
-                <li>Próximos</li>
+                <li class="menu-item">Inicio</li>
+                <li class="menu-item">Trending</li>
+                <li class="menu-item">Categorias</li>
+                <li class="menu-item">Popular</li>
+                <li class="menu-item">Próximos</li>
             </ul>
         </div>
         <div>
-            <input type="text" >
-            <input type="submit" value="Buscar">
+            <input type="text" id="input-search">
+            <input type="submit" value="Buscar" class="search-btn">
         </div>
     </header>
+
+    <main>
+        <div id="main-movie" class="main-movie">
+            <img src="./assets/stKGOm8UyhuLPR9sZLjs5AkmncA.webp" alt="pelicula principal">
+            
+        </div>
+    </main>
 
     <script src="./src/private.js"></script>
     <script src="./src/main.js"></script>
