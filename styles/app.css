@@ -22,7 +22,7 @@ html{
     display: flex;
     background-color: black;
     width: 100%;
-    height: 40px;
+    height: 50px;
     justify-content: space-around;
     align-items: center;
     color: white;
@@ -40,12 +40,104 @@ html{
 }
 
 .main-movie{
+    display: flex;
+    justify-content: end;
     width: 100%;
-    height: 600px;
+    height: 550px;
+    background-color: black;
+    position: relative;
+    
 }
 
 .main-movie img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    filter: contrast(100%) brightness(80%);
+    
+}
+
+.main-movie--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    width: 40%;
+}
+
+.movie-info-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.stars{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rating, .duration{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.category{
+    background-color: #DB0000;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.movie-info h2{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: white;
+    margin: 10px 0;
+}
+
+.movie-info p{
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2rem;
+    margin: 20px 0;
+}
+
+.movie-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: auto;
+    gap: 20px;
+}
+
+.trailer-btn{
+    display: flex;
+    align-items: center;
+    height: 28px;
+    gap: 8px;
+    background-color: #DB0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.details-btn{
+    display: flex;
+    height: 28px;
+    gap: 8px;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    cursor: pointer;
 }
