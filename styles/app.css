@@ -40,6 +40,30 @@ html{
     font-size: 1.5rem;
 }
 
+.search-container{
+    display: flex;
+    align-items: center;
+}
+
+.search-container .input-search{
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 25px;
+    position: relative;
+}
+
+.search-container button{
+    width: 35px;
+    height: 35px;
+    background-color: #DB0000;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 6%;
+}
+
 .main-movie{
     display: flex;
     justify-content: end;
