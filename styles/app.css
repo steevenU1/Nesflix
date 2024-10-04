@@ -10,6 +10,7 @@ html{
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    background-color: black;
     
 }
 
@@ -38,6 +39,7 @@ html{
     display: inline-block;
     margin: 0 20px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .search-container{
@@ -160,6 +162,52 @@ html{
     gap: 8px;
     align-items: center;
     background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+/* Trending horizontal list */
+
+.trending-section{
+    width: 100%;
+}
+
+.trending-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.trending-header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+.trend-title{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.trend-img{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.mini-btn{
+    display: flex;
+    align-items: center;
+    height: 28px;
+    gap: 8px;
+    background-color: #DB0000;
     color: white;
     border: none;
     border-radius: 8px;
